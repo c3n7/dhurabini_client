@@ -31,18 +31,41 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              child: Center(
-                child: Text("Drawer Header"),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.blue,
+            Container(
+              height: 60.0,
+              child: DrawerHeader(
+                padding: EdgeInsets.all(0),
+                margin: EdgeInsets.all(0),
+                child: Center(
+                  child: Text(
+                    "Dhurabi",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
               ),
             ),
             ListTile(
@@ -55,9 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: Center(
-        child: Text(
-          'Hello centred text',
+      body: Container(
+        child: Center(
+          child: Text(
+            'Hello centred text',
+          ),
         ),
       ),
     );
