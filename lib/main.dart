@@ -9,11 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dhurabi',
+      title: 'Dhurabini',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Dhurabi'),
+      home: MyHomePage(title: 'Dhurabini'),
     );
   }
 }
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.all(0),
               child: Center(
                 child: Text(
-                  "Dhurabi",
+                  "Dhurabini",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
