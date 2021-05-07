@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dhurabini_client">
+    package="tech.c3n7.dhurabini_client">
    <application
         android:label="dhurabini_client"
         android:icon="@mipmap/ic_launcher">
