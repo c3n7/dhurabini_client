@@ -48,24 +48,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            Container(
-              height: 60.0,
-              child: DrawerHeader(
-                padding: EdgeInsets.all(0),
-                margin: EdgeInsets.all(0),
-                child: Center(
-                  child: Text(
-                    "Dhurabi",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+            DrawerHeader(
+              padding: EdgeInsets.all(0),
+              margin: EdgeInsets.all(0),
+              child: Center(
+                child: Text(
+                  "Dhurabi",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.blue,
               ),
             ),
             ListTile(
